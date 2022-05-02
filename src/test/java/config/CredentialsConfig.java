@@ -5,4 +5,11 @@ import org.aeonbits.owner.Config;
 public interface CredentialsConfig extends Config {
     String login();
     String password();
+    String browserSize();
+    String holdBrowserOpen();
+
+    String selenoidLogin();
+    String selenoidPass();
+    String selenoidUrl();
+    String selenoidParsedUrl();
 }
