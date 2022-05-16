@@ -18,15 +18,15 @@ public class TestBase {
     static void setUp() {
         SelenideLogger.addListener("AllureSelenide", new AllureSelenide());
 
-        Configuration.baseUrl = "https://astrio.ru";
-        Configuration.browserSize = "1920x1080";
-        Configuration.remote = "https://user1:1234@selenoid.autotests.cloud/wd/hub";
+//        Configuration.baseUrl = "https://astrio.ru";
+//        Configuration.browserSize = "1920x1080";
+//        Configuration.remote = "https://user1:1234@selenoid.autotests.cloud/wd/hub";
         //Configuration.browserSize = System.getProperty("browserSize", configs.browserSize());
 
-//        Configuration.baseUrl = System.getProperty("base_url");
-//        //-Dbase_url=${BASE_URL} первое это переменная в коде а второе переменная в дженкинсе
-//        Configuration.browserSize = System.getProperty("browsersize");
-//        Configuration.remote = "https://"+ configs.selenoidLogin() + ":" + configs.selenoidPass() + "@" + System.getProperty("selenoid_server");
+        Configuration.baseUrl = System.getProperty("base_url");
+        //-Dbase_url=${BASE_URL} первое это переменная в коде а второе переменная в дженкинсе
+        Configuration.browserSize = System.getProperty("browsersize");
+        Configuration.remote = "https://"+ configs.selenoidLogin() + ":" + configs.selenoidPass() + "@" + System.getProperty("selenoid_server");
       DesiredCapabilities capabilities = new DesiredCapabilities();
         capabilities.setCapability("enableVNC", true);
         capabilities.setCapability("enableVideo", true);
