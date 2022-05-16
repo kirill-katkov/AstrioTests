@@ -76,3 +76,10 @@ task owner(type: Test) {
         includeTags "owner"
     }
 }
+
+
+task astrio(type: Test) {
+    useJUnitPlatform{
+        includeTags "astrio"
+    }
+}
