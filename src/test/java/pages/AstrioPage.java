@@ -55,7 +55,7 @@ public class AstrioPage {
             closeCheckForm = $("#closeLargeModal");
 
     public AstrioPage openPage() {
-        open("https://astrio.ru/");
+        open("/");
         zoom(0.5);
         return this;
     }
