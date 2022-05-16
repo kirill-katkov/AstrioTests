@@ -8,8 +8,8 @@ repositories {
 }
 
 def allureVersion = "2.17.3",
-        selenideVersion = "6.4.0",
-        junitVersion = "5.8.2",
+    selenideVersion = "6.4.0",
+    junitVersion = "5.8.2",
     slf4jVersion = "1.7.32"
 
 allure {
@@ -43,15 +43,6 @@ tasks.withType(JavaCompile) {
 tasks.withType(Test) {
     systemProperties(System.getProperties())
     useJUnitPlatform()
-    if (System.getProperty("threads") != null) {
-        systemProperties += [
-                'junit.jupiter.execution.parallel.enabled'                 : true,
-                'junit.jupiter.execution.parallel.mode.default'            : 'concurrent',
-                'junit.jupiter.execution.parallel.mode.classes.default'    : 'concurrent',
-                'junit.jupiter.execution.parallel.config.strategy'         : 'fixed',
-                'junit.jupiter.execution.parallel.config.fixed.parallelism': System.getProperty("threads").toInteger()
-        ]
-    }
 
     testLogging {
         lifecycle {
@@ -83,11 +74,5 @@ task systemProperties(type: Test) {
 task owner(type: Test) {
     useJUnitPlatform{
         includeTags "owner"
-    }
-}
-
-task astrio(type: Test) {
-    useJUnitPlatform{
-        includeTags "astrio"
     }
 }
