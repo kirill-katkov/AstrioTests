@@ -6,9 +6,8 @@ import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 import pages.AstrioPage;
-import helpers.DriverUtils;
-import static org.assertj.core.api.Assertions.assertThat;
-import static com.codeborne.selenide.Selenide.open;
+
+
 import static io.qameta.allure.Allure.step;
 
 
@@ -250,15 +249,7 @@ public class AstrioPageTests extends TestBase{
         });
     }
 
-    @Test
-    @Tag("astrio")
-    @DisplayName("Проверка отсутствия ошибок в журнале консоли главной страницы")
-    void consoleShouldNotHaveErrorsTest() {
-        step("Проверка отсутствия ошибок ошибок 'SEVERE' в логах консоли", () -> {
-            String consoleLogs = DriverUtils.getConsoleLogs();
-            assertThat(consoleLogs).doesNotContain("SEVERE");
-        });
-    }
+
 
 
 //    @Test
