@@ -59,6 +59,7 @@ gradle clean test
 clean
 astrio
  -DbaseUrl=${BASE_URL}
+ -Dbrowser=${BROWSER}
  -Dbrowsersize=${BROWSERSIZE}
  -Dselenoid_server=${SELENOID_SERVER}
 ```
@@ -90,7 +91,7 @@ astrio
 </p>
 
 ## :film_projector: Видео примеры прохождения тестов
-> К каждому тесту в отчете прилагается видео. Одно из таких видео представлено ниже.
+> После каждого прохождения теста будет доступно видео. Один из примеров ниже:
 <p align="center">
-  <img title="Selenoid Video" src="images/screenshots/e6bfd1a5ec0643a6.gif">
+  <img title="Selenoid Video" src="images/screenshots/1.gif">
 </p>
