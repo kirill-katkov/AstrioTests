@@ -173,7 +173,7 @@ public class AstrioPageTests extends TestBase{
         });
 
         step("Проверка заполнения формы", () -> {
-            Selenide.sleep(500);
+            Selenide.sleep(5000);
             astrioPage.careerCheckForm("Ваше сообщение получено и мы ответим на него в ближайшее время. Спасибо за сообщение.");
         });
     }
