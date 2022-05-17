@@ -9,21 +9,11 @@ public class AstrioPage {
 
     SelenideElement
             navLinkVacancies = $x("(//nav//ul//li//a)[1]"),
-            navLinkAboutUs = $x("(//nav//ul//li//a)[2]"),
-            navLinkClients = $x("(//nav//ul//li//a)[3]"),
-            navLinkServices = $x("(//nav//ul//li//a)[4]"),
-            navLinkBlog = $x("(//nav//ul//li//a)[5]"),
-            navLinkContacts = $x("(//nav//ul//li//a)[6]"),
-
     scrollNavAboutUS = $(".careerBanner__point--point1 .careerBanner__pointCircle"),
 
-    menuLinkAboutUs = $x("(//li[@class='careerMenu__item']//a)[1]"),//about Us
     menuLinkDoing=$x("(//li[@class='careerMenu__item']//a)[2]"),//what are we doing
     menuLinkEducation= $x("(//li[@class='careerMenu__item']//a)[3]"), //education
            menuLinkCareer = $x("(//li[@class='careerMenu__item']//a)[4]"), //career
-            menuLinkPractice= $x("(//li[@class='careerMenu__item']//a)[5]"), //practice
-            menuLinkVacancies = $x("(//li[@class='careerMenu__item']//a)[6]"), //vacancies
-
     menuAboutUCheckTitle =  $("div#about-us .careerInfo__title"),
             menuAboutUCheckText=$("div#about-us .careerInfo__text"),
 
