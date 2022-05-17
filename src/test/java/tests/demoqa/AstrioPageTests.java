@@ -251,6 +251,7 @@ public class AstrioPageTests extends TestBase{
     }
 
     @Test
+    @Tag("astrio")
     @DisplayName("Проверка отсутствия ошибок в журнале консоли главной страницы")
     void consoleShouldNotHaveErrorsTest() {
         step("Проверка отсутствия ошибок ошибок 'SEVERE' в логах консоли", () -> {
