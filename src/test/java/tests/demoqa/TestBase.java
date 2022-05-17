@@ -24,6 +24,7 @@ public class TestBase {
         //Configuration.browserSize = System.getProperty("browserSize", configs.browserSize());
 
         Configuration.baseUrl = System.getProperty("base_url");
+        Configuration.browser = System.getProperty("browser", "chrome");
         //-Dbase_url=${BASE_URL} первое это переменная в коде а второе переменная в дженкинсе
         Configuration.browserSize = System.getProperty("browsersize");
         Configuration.remote = "https://"+ configs.selenoidLogin() + ":" + configs.selenoidPass() + "@" + System.getProperty("selenoid_server");

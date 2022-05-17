@@ -1,6 +1,9 @@
 # Проект по автоматизации тестирования сайта "Аstrio"
 ## <a target="_blank" href="https://astrio.ru"> Аstrio - платформа по созданию интернет-магазинов на самых продвинутых e-commerce платформах в мире Magento Open Source и Magento Commerce</a>
 
+
+<img title="Main Gage" src="images/screenshots/main.png">
+
 ## :floppy_disk: Содержание:
 
 - <a href="#computer-технологии-и-инструменты">Технологии и инструменты</a>
@@ -33,12 +36,16 @@
 - Проверка контента на странице "Обучение и карьера"
 - Проверка контента на странице "Что мы делаем"
 - Проверка заполнения формы "для старта в IT"
-- Проверка отсутствия ошибок в консоли бразуера
 
 ## :electric_plug: Сборка в Jenkins
-### <a target="_blank" href="https://jenkins.autotests.cloud/job/AUTO-978/">Сборка в Jenkins</a>
+### <a target="_blank" href="https://jenkins.autotests.cloud/job/AstrioProject_Katkov/build?delay=0sec">Сборка с параметрами в Jenkins</a>
 <p align="center">
-<img title="Jenkins Dashboard" src="images/screenshots/111.png">
+<img title="Jenkins Dashboard" src="images/screenshots/jenkins-1.png">
+</p>  
+
+### <a target="_blank" href="https://jenkins.autotests.cloud/job/AstrioProject_Katkov/build?delay=0sec">Архив Сборок в Jenkins</a>
+<p align="center">
+<img title="Jenkins Dashboard" src="images/screenshots/jenkins-2.png">
 </p>  
 
 ## :arrow_forward: Запуск из терминала
@@ -46,59 +53,40 @@
 ```
 gradle clean test
 ```
-## :gear: Запуск тестов с выбором параметров 
-<img title="Jenkins ParamStart" src="images/screenshots/param.png">
 
 Удаленный запуск:
 ```
 clean
-test
--Dbrowser=${BROWSER}
--DbrowserVersion=${BROWSER_VERSION}
--DbrowserSize=${BROWSER_SIZE}
--DbrowserMobileView="${BROWSER_MOBILE}"
--DremoteDriverUrl=https://user1:1234@${REMOTE_DRIVER_URL}/wd/hub/
--DvideoStorage=https://${REMOTE_DRIVER_URL}/video/
+astrio
+ -DbaseUrl=${BASE_URL}
+ -Dbrowsersize=${BROWSERSIZE}
+ -Dselenoid_server=${SELENOID_SERVER}
 ```
-:monocle_face: Попробуйте - это очень удобно!
-- -Dbrowser - можно выбрать браузер, который необходимо открыть именно вам 
-(chrome,
+:monocle_face: Расшифровка параметров сборки!
+
+- -DbaseUrl - можно выбрать базовый адрес на котором будут проходить тесты
+- -Dbrowser - можно выбрать необходимый браузер,(chrome,
   opera,
-  firefox,
-  safari)
-- -DbrowserVersion - выберете нужную версию браузера
-- -DbrowserSize - возможность упралять разрешением (1920x1080,
-  1366x768,
-  1280x1024,
-  1280x800,
-  1024x768)
-- -DbrowserMobileView - возможность проверить свой продукт на мобильном устройстве (браузере)
-- -DremoteDriverUrl - попробуйте выбрать свой аеро куб :)
+  firefox)
+- -Dbrowsersize - возможность упралять разрешением (1920x1080,
+  1366×768, 1536х864)
+- -Dselenoid_server - возможность выбрать сервер для запуска тестов
 
 ## :open_book: Allure отчет
 - ### Главный экран отчета
 <p align="center">
-<img title="Allure Overview Dashboard" src="images/screenshots/4321.png">
+<img title="Allure Overview Dashboard" src="images/screenshots/allure-1.png">
 </p>
 
 - ### Страница с проведенными тестами
 <p align="center">
-<img title="Allure Test Page" src="images/screenshots/1234.png">
+<img title="Allure Test Page" src="images/screenshots/allure-2.png">
 </p>
 
-## :hammer: Allure Test Ops отчет
-<p align="center">
-<img title="Allure Test Ops Launch" src="images/screenshots/2222.png">
-</p>
-
-## :wrench: Интеграция с Jira
-<p align="center">
-<img title="Jira Issue Dashboard" src="images/screenshots/jira.png">
-</p>
 
 ## :robot: Отчет в Telegram
 <p align="center">
-<img title="Telegram notification message" src="images/screenshots/Screenshot_2.png">
+<img title="Telegram notification message" src="images/screenshots/telegram.png">
 </p>
 
 ## :film_projector: Видео примеры прохождения тестов
