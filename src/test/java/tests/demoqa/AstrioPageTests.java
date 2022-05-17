@@ -112,11 +112,11 @@ public class AstrioPageTests extends TestBase{
         });
 
         step("Проверка текста заголовка", () -> {
-            astrioPage.DoingCheckTitle("Наши проекты");
+            astrioPage.doingCheckTitle("Наши проекты");
         });
 
         step("Проверка текста параграфа", () -> {
-            astrioPage.DoingUCheckText("Наша основная платформа - Magento");
+            astrioPage.doingUCheckText("Наша основная платформа - Magento");
         });
     }
 
@@ -136,11 +136,11 @@ public class AstrioPageTests extends TestBase{
         });
 
         step("Проверка текста заголовка", () -> {
-            astrioPage.EducationCheckTitle("Отлаженный процесс обучения");
+            astrioPage.educationCheckTitle("Отлаженный процесс обучения");
         });
 
         step("Проверка текста параграфа", () -> {
-            astrioPage.EducationUCheckText("Наш процесс постоянно шлифуется последние 6 лет.");
+            astrioPage.educationUCheckText("Наш процесс постоянно шлифуется последние 6 лет.");
         });
     }
 

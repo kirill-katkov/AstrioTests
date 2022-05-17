@@ -33,26 +33,14 @@ public class AstrioPage {
     menuEducationCheckTitle =  $("div#progress .careerInfo__title"),
             menuEducationUCheckText=$("div#progress .careerInfo__text"),
 
-
-    scrollUp = $("#scrollUp"),
     contactName= $("#short-contacts-name"),
     contactEmail= $("#short-contacts-email"),
     contactPhone=$("#short-contacts-phone"),
     contactSubmit=$(".shortContacts__submit"),
             contactMessage= $("#short-contacts-form .shortContacts__message"),
-            vacanciesMessage= $(".formContact__message"),
-
-
-    vacanciesEmail= $("#email"),
-    vacanciesPhone= $("#phone"),
-    vacanciesComment=$("#comment"),
-    vacanciesSubmit=$(".formContact__submit"),
-
             linkMenuMain = $(".block-top-menu"),//на главной странице
             linkMenuVacancies = $("ul.careerMenu__list"),//на странице вакансий
-            practiceFormWrapper = $(".block-copyright"),
-            practiceFormTitle = $("#example-modal-sizes-title-lg"),
-            closeCheckForm = $("#closeLargeModal");
+            practiceFormWrapper = $(".block-copyright");
 
     public AstrioPage openPage() {
         open("https://astrio.ru/");
@@ -62,10 +50,6 @@ public class AstrioPage {
 
     public AstrioPage checkCopyright() {
         practiceFormWrapper.shouldHave(text("ASTRIO"));
-        return this;
-    }
-    public AstrioPage scrollClick() {
-        scrollUp.click();
         return this;
     }
 
@@ -79,40 +63,9 @@ public class AstrioPage {
         return this;
     }
 
-    public AstrioPage checkResultPage() {
-        practiceFormTitle.shouldHave(text("Thanks for submitting the form"));
-        return this;
-    }
-
-
     public AstrioPage openNavLinkVacancies() {
         navLinkVacancies.click();
         zoom(0.5);
-        return this;
-    }
-
-
-    public AstrioPage openNavLinkAboutUs () {
-        navLinkAboutUs.click();
-        return this;
-    }
-    public AstrioPage openNavLinkClients() {
-        navLinkClients.click();
-        return this;
-    }
-
-    public AstrioPage openNavLinkServices() {
-        navLinkServices.click();
-        return this;
-    }
-
-    public AstrioPage openNavLinkBlog() {
-        navLinkBlog.click();
-        return this;
-    }
-
-    public AstrioPage openNavLinkContacts () {
-        navLinkContacts.click();
         return this;
     }
 
@@ -133,32 +86,26 @@ public class AstrioPage {
     }
 
 
-    public AstrioPage DoingCheckTitle(String key) {
+    public AstrioPage doingCheckTitle(String key) {
         menuDoingCheckTitle.shouldHave(text(key));
         return this;
     }
 
-    public AstrioPage DoingUCheckText(String key) {
+    public AstrioPage doingUCheckText(String key) {
         menuDoingUCheckText.shouldHave(text(key));
         return this;
     }
 
-    public AstrioPage EducationCheckTitle(String key) {
+    public AstrioPage educationCheckTitle(String key) {
         menuEducationCheckTitle.shouldHave(text(key));
         return this;
     }
 
-    public AstrioPage EducationUCheckText(String key) {
+    public AstrioPage educationUCheckText(String key) {
         menuEducationUCheckText.shouldHave(text(key));
         return this;
     }
 
-
-
-    public AstrioPage openMenuLinkAboutUs() {
-        menuLinkAboutUs.click();
-        return this;
-    }
 
     public AstrioPage openMenuLinkDoing() {
         menuLinkDoing.click();
@@ -174,19 +121,6 @@ public class AstrioPage {
         menuLinkCareer.click();
         return this;
     }
-
-    public AstrioPage openMenuLinkPractice () {
-        menuLinkPractice.click();
-        return this;
-    }
-
-
-    public AstrioPage openMenuLinkVacancies() {
-        menuLinkVacancies.click();
-        return this;
-    }
-
-
 
     public AstrioPage setContactName(String formContactName) {
         contactName.setValue(formContactName);
@@ -213,30 +147,7 @@ public class AstrioPage {
         return this;
     }
 
-    public AstrioPage setVacanciesEmail(String formVacanciesEmail) {
-        vacanciesEmail.setValue(formVacanciesEmail);
-        return this;
-    }
 
-    public AstrioPage setVacanciesPhone(String formVacanciesPhone) {
-        vacanciesPhone.setValue(formVacanciesPhone);
-        return this;
-    }
-
-    public AstrioPage setVacanciesComment(String formVacanciesComment) {
-        vacanciesComment.setValue(formVacanciesComment);
-        return this;
-    }
-
-    public AstrioPage vacanciesButton() {
-        vacanciesSubmit.click();
-        return this;
-    }
-
-    public AstrioPage vacanciesCheckForm(String key) {
-        vacanciesMessage.shouldHave(text(key));
-        return this;
-    }
 
 
 }
