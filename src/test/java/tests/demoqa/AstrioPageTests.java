@@ -16,83 +16,9 @@ import static io.qameta.allure.Allure.step;
 @Owner("KirillKatkov")
 @Feature("Задачи в репозитории")
 @Story("Просмотр созданных задач в репозитории")
-//@DisplayName("Мой любимый тест")
 @Link(value = "Тестинг", url = "https://github.com")
 public class AstrioPageTests extends TestBase{
     AstrioPage astrioPage = new AstrioPage();
-
-
-//    @BeforeAll
-//    static void setUp() {
-//        Configuration.holdBrowserOpen = true;
-//        Configuration.browserSize = "1920x1080";
-//    }
-
-
-//    @AfterEach
-//    void close() {
-//        Selenide.closeWebDriver();
-//    }
-
-//    @Test
-//    @Tag("astrio")
-//    void openPageTest() {
-//        astrioPage.openPage();
-//
-//        astrioPage.checkCopyright();
-//
-//        astrioPage.checkResultMain("Вакансии")
-//                .checkResultMain("О нас")
-//                .checkResultMain("Клиенты")
-//                .checkResultMain("Услуги")
-//                .checkResultMain("Блог")
-//                .checkResultMain("Контакты");
-//
-//        astrioPage.openNavLinkVacancies();
-//
-//        astrioPage.checkResultVacancies("О нас")
-//                .checkResultVacancies("Что мы делаем")
-//                .checkResultVacancies("Обучение в ASTRIO")
-//                .checkResultVacancies("Ваша карьера")
-//                .checkResultVacancies("Стажировка и практика")
-//                .checkResultVacancies("Наши вакансии");
-//
-//
-//        astrioPage.openScrollNavAboutUS()
-//                .aboutUCheckTitle("Работа в одной из лучших IT компаний Ульяновска")
-//                .aboutUCheckText("Высокий уровень проектов,");
-//
-//
-//        //astrioPage.openMenuLinkAboutUs();
-//        astrioPage.openMenuLinkDoing()
-//                .DoingCheckTitle("Наши проекты")
-//                .DoingUCheckText("Наша основная платформа - Magento");
-//
-//        astrioPage.openMenuLinkEducation()
-//                .EducationCheckTitle("Отлаженный процесс обучения")
-//                .EducationUCheckText("Наш процесс постоянно шлифуется последние 6 лет.");
-//
-//        astrioPage.openMenuLinkCareer();
-//        astrioPage.setContactName("Ruslan")
-//                .setContactEmail("1ya-ruslan@gmail.com")
-//                .setContactPhone("790429445322");
-//        //.careerButton()
-//        //.careerCheckForm("Ваше сообщение получено и мы ответим на него в ближайшее время. Спасибо за сообщение.");
-//
-//        astrioPage
-//                .setVacanciesEmail("1ya-ruslan@gmail.com")
-//                .setVacanciesPhone("790429445322")
-//                .setVacanciesComment("Ruslan");
-////                .vacanciesButton()
-////                .vacanciesCheckForm("Ваше сообщение получено и мы ответим на него в ближайшее время. Спасибо за сообщение.");
-//
-//
-//        //$x("(//div[@role='tablist']/div)[2]").click();
-//
-//
-//        //$$("//div[@class='careerBlock']//p)").shouldHave(itemWithText("Разработка ведется на современных платформах, с использованием самых современных инструментов разработки. В работе активно используются следующие технологии и инструменты: паттерны проектирования / MVC, PWA, phpStorm, Git, Gitlab CI, Newrelic, Elasticsearch, GraphQL, Docker."));
-//
-//    }
 
     @Test
     @Tag("astrio")
@@ -251,23 +177,5 @@ public class AstrioPageTests extends TestBase{
             astrioPage.careerCheckForm("Ваше сообщение получено и мы ответим на него в ближайшее время. Спасибо за сообщение.");
         });
     }
-
-
-
-
-//    @Test
-//    void setAndCheckLinkVacancies() {
-//        astrioPage.openPage();
-//        astrioPage.openNavLinkVacancies();
-//        astrioPage.openMenuLinkVacancies();
-//        astrioPage.setVacanciesEmail("1ya-ruslan@gmail.com");
-//        astrioPage.setVacanciesPhone("790429445322");
-//        astrioPage.setVacanciesComment("Ruslan");
-//              astrioPage.vacanciesButton();
-//               astrioPage.vacanciesCheckForm("Ваше сообщение получено и мы ответим на него в ближайшее время. Спасибо за сообщение.");
-//    }
-
-
-
 
 }
