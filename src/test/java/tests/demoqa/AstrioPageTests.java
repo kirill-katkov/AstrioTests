@@ -1,6 +1,7 @@
 package tests.demoqa;
 
 
+import com.codeborne.selenide.Selenide;
 import io.qameta.allure.*;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Tag;
@@ -9,6 +10,7 @@ import pages.AstrioPage;
 
 
 import static io.qameta.allure.Allure.step;
+
 
 
 @Owner("KirillKatkov")
@@ -245,6 +247,7 @@ public class AstrioPageTests extends TestBase{
         });
 
         step("Проверка заполнения формы", () -> {
+            Selenide.sleep(500);
             astrioPage.careerCheckForm("Ваше сообщение получено и мы ответим на него в ближайшее время. Спасибо за сообщение.");
         });
     }
