@@ -39,7 +39,7 @@ public class AstrioPage {
     contactEmail= $("#short-contacts-email"),
     contactPhone=$("#short-contacts-phone"),
     contactSubmit=$(".shortContacts__submit"),
-            contactMessage= $("#short-contacts-form"),
+            contactMessage= $("#short-contacts-form .shortContacts__message"),
             vacanciesMessage= $(".formContact__message"),
 
 
