@@ -12,4 +12,9 @@ public interface CredentialsConfig extends Config {
     String selenoidPass();
     String selenoidUrl();
     String selenoidParsedUrl();
+    @Key("remote")
+    @DefaultValue("")
+    String remote();
+
+    String videoStorage();
 }
