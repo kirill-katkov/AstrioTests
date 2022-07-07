@@ -51,7 +51,7 @@ public class HrPrimePage {
     }
 
     public HrPrimePage openPage() {
-        open("https://hrprime.ru/#");
+        open("https://hrprime.ru/");
         zoom(0.5);
         return this;
     }
@@ -68,13 +68,11 @@ public class HrPrimePage {
 
 
     public HrPrimePage clickTabOzon() {
-        zoom(0.4);
         ozonBlock.click();
         return this;
     }
 
     public HrPrimePage searchInTabOzon() {
-        zoom(0.4);
         ozonBlockCheckContent.shouldHave(text("Так как OZON активно проработал открытые источники поиска"));
         return this;
     }

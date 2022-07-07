@@ -26,7 +26,7 @@ public class HrPrimePageTests extends TestBase{
     AstrioPage astrioPage = new AstrioPage();
 HrPrimePage hrPrimePage = new HrPrimePage();
 
-    private final String mainPage = "https://hrprime.ru/";
+    private final String mainPage = "https://hrprime.ru";
     private final String casesPage = "https://hrprime.ru/cases";
     private final String clientPage = "https://hrprime.ru/client";
     private final String contactsPage = "https://hrprime.ru/contacts";
