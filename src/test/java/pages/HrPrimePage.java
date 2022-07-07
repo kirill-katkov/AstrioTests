@@ -47,7 +47,6 @@ public class HrPrimePage {
 
     public HrPrimePage openPage(String page) {
         open(page);
-        zoom(0.5);
         return this;
     }
 
@@ -57,17 +56,20 @@ public class HrPrimePage {
     }
 
     public HrPrimePage scrollTabOzon() {
+        zoom(0.4);
         topCasesBlock.scrollTo();
         return this;
     }
 
 
     public HrPrimePage clickTabOzon() {
+        zoom(0.4);
         ozonBlock.click();
         return this;
     }
 
     public HrPrimePage searchInTabOzon() {
+        zoom(0.4);
         ozonBlockCheckContent.shouldHave(text("Так как OZON активно проработал открытые источники поиска"));
         return this;
     }
