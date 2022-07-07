@@ -71,7 +71,6 @@ HrPrimePage hrPrimePage = new HrPrimePage();
     void openAndCheckTitleTest() {
         step("Открытие страницы - https://hrprime.ru", () -> {
             hrPrimePage.openPage(mainPage);
-            zoom(0.8);
         });
         step("Поиск заголовка на главной странице", () -> {
             hrPrimePage.checkMainTitle();
@@ -84,7 +83,6 @@ HrPrimePage hrPrimePage = new HrPrimePage();
     void openTabOzon() {
         step("Открытие страницы - https://hrprime.ru", () -> {
             hrPrimePage.openPage(mainPage);
-            zoom(0.8);
         });
         step("Переход на вкладку Ozon", () -> {
             hrPrimePage.scrollTabOzon();
@@ -100,7 +98,6 @@ HrPrimePage hrPrimePage = new HrPrimePage();
     void checkContentTabOzon() {
         step("Открытие страницы - https://hrprime.ru", () -> {
             hrPrimePage.openPage(mainPage);
-            zoom(0.8);
         });
         step("Переход на вкладку Ozon", () -> {
             hrPrimePage.clickTabOzon();
