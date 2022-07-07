@@ -50,6 +50,12 @@ public class HrPrimePage {
         return this;
     }
 
+    public HrPrimePage openPage() {
+        open("https://hrprime.ru/");
+        zoom(0.5);
+        return this;
+    }
+
     public HrPrimePage checkMainTitle() {
         zoom(0.4);
         mainTitle.shouldHave(text("Создаем технологических лидеров"));
