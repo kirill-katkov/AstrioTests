@@ -71,6 +71,7 @@ HrPrimePage hrPrimePage = new HrPrimePage();
     void openAndCheckTitleTest() {
         step("Открытие страницы - https://hrprime.ru", () -> {
             hrPrimePage.openPage(mainPage);
+            Selenide.sleep(5000);
         });
         step("Поиск заголовка на главной странице", () -> {
             hrPrimePage.checkMainTitle();
