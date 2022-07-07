@@ -82,7 +82,8 @@ HrPrimePage hrPrimePage = new HrPrimePage();
     @DisplayName("Переход на вкладку Ozon")
     void openTabOzon() {
         step("Открытие страницы - https://hrprime.ru", () -> {
-            hrPrimePage.openPage();
+            hrPrimePage.openPage(casesPage);
+            hrPrimePage.openPage(mainPage);
         });
         step("Переход на вкладку Ozon", () -> {
             hrPrimePage.scrollTabOzon();
