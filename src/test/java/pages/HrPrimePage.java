@@ -57,7 +57,7 @@ public class HrPrimePage {
     }
 
     public HrPrimePage checkMainTitle() {
-        mainTitle.shouldHave(text("Создаем технологических лидеров"));
+        mainTitle.shouldHave(text("Creating technology leaders"));
         return this;
     }
 
