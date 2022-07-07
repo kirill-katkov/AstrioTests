@@ -73,29 +73,29 @@ public class AstrioPageTests extends TestBase{
 
     }
 
-    @Test
-    @Tag("astrio")
-    @DisplayName("Переход к пунту меню - О нас и проверка контента")
-    void aboutUSOpenAndCheck() {
-        step("Открытие страницы - https://astrio.ru/", () -> {
-            astrioPage.openPage();
-        });
-        step("Открытие страницы Вакансий", () -> {
-            astrioPage.openNavLinkVacancies();
-        });
-
-        step("Переход к пункту меню о Нас", () -> {
-            astrioPage.openScrollNavAboutUS();
-        });
-
-        step("Проверка текста заголовка", () -> {
-            astrioPage.aboutUCheckTitle("Работа в одной из лучших IT компаний Ульяновска");
-        });
-
-        step("Проверка текста параграфа", () -> {
-            astrioPage.aboutUCheckText("Высокий уровень проектов,");
-        });
-    }
+//    @Test
+//    @Tag("astrio")
+//    @DisplayName("Переход к пунту меню - О нас и проверка контента")
+//    void aboutUSOpenAndCheck() {
+//        step("Открытие страницы - https://astrio.ru/", () -> {
+//            astrioPage.openPage();
+//        });
+//        step("Открытие страницы Вакансий", () -> {
+//            astrioPage.openNavLinkVacancies();
+//        });
+//
+//        step("Переход к пункту меню о Нас", () -> {
+//            astrioPage.openScrollNavAboutUS();
+//        });
+//
+//        step("Проверка текста заголовка", () -> {
+//            astrioPage.aboutUCheckTitle("Работа в одной из лучших IT компаний Ульяновска");
+//        });
+//
+//        step("Проверка текста параграфа", () -> {
+//            astrioPage.aboutUCheckText("Высокий уровень проектов,");
+//        });
+//    }
 
     @Test
     @Tag("astrio")
