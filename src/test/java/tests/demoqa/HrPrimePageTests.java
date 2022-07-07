@@ -84,6 +84,10 @@ HrPrimePage hrPrimePage = new HrPrimePage();
     void openTabOzon() {
         step("Открытие страницы - https://hrprime.ru", () -> {
             hrPrimePage.openPage(mainPage);
+            Selenide.sleep(5000);
+        });
+        step("Переход на вкладку Ozon", () -> {
+            hrPrimePage.scrollTabOzon();
         });
         step("Переход на вкладку Ozon", () -> {
             hrPrimePage.clickTabOzon();

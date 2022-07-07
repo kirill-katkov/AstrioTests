@@ -55,8 +55,13 @@ public class HrPrimePage {
         return this;
     }
 
-    public HrPrimePage clickTabOzon() {
+    public HrPrimePage scrollTabOzon() {
         topCasesBlock.scrollTo();
+        return this;
+    }
+
+
+    public HrPrimePage clickTabOzon() {
         ozonBlock.click();
         return this;
     }
