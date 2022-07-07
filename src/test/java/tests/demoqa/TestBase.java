@@ -33,6 +33,7 @@ public class TestBase {
         capabilities.setCapability("enableVideo", true);
         Configuration.browserCapabilities = capabilities;
         Configuration.pageLoadTimeout=40000;
+        Configuration.holdBrowserOpen = true;
     }
 
     @AfterEach
