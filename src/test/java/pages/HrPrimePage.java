@@ -47,11 +47,11 @@ public class HrPrimePage {
 
     public HrPrimePage openPage(String page) {
         open(page);
+        zoom(0.5);
         return this;
     }
 
     public HrPrimePage checkMainTitle() {
-        zoom(0.5);
         mainTitle.shouldHave(text("Создаем технологических лидеров"));
         return this;
     }
@@ -63,13 +63,11 @@ public class HrPrimePage {
 
 
     public HrPrimePage clickTabOzon() {
-        zoom(0.5);
         ozonBlock.click();
         return this;
     }
 
     public HrPrimePage searchInTabOzon() {
-        zoom(0.5);
         ozonBlockCheckContent.shouldHave(text("Так как OZON активно проработал открытые источники поиска"));
         return this;
     }
