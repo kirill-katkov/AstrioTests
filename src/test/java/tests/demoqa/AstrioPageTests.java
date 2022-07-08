@@ -188,10 +188,10 @@ public class AstrioPageTests extends TestBase{
 
         step("Клик по кнопке - отправка формы", () -> {
             astrioPage.careerButton();
+            Selenide.sleep(10000);
         });
 
         step("Проверка заполнения формы", () -> {
-            Selenide.sleep(10000);
             astrioPage.careerCheckForm("Ваше сообщение получено и мы ответим на него в ближайшее время. Спасибо за сообщение.");
         });
     }
@@ -223,10 +223,10 @@ public class AstrioPageTests extends TestBase{
 
         step("Клик по кнопке - отправка формы", () -> {
             astrioPage.vacanciesButton();
+            Selenide.sleep(10000);
         });
 
         step("Проверка заполнения формы", () -> {
-            Selenide.sleep(10000);
             astrioPage.vacanciesCheckForm("Ваше сообщение получено и мы ответим на него в ближайшее время. Спасибо за сообщение.");
         });
     }
