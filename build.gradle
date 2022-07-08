@@ -84,9 +84,3 @@ task astrio(type: Test) {
     }
 }
 
-
-task hrPrimePage(type: Test) {
-    useJUnitPlatform{
-        includeTags "hrPrimePage"
-    }
-}
