@@ -29,11 +29,6 @@ public class AstrioPage {
     contactPhone=$("#short-contacts-phone"),
     contactSubmit=$(".shortContacts__submit"),
             contactMessage= $("#short-contacts-form .shortContacts__message"),
-            vacanciesMessage= $(".formContact__message"),
-    vacanciesEmail= $("#email"),
-            vacanciesPhone= $("#phone"),
-            vacanciesComment=$("#comment"),
-            vacanciesSubmit=$(".formContact__submit"),
             linkMenuMain = $(".block-top-menu"),//на главной странице
             linkMenuVacancies = $("ul.careerMenu__list"),//на странице вакансий
             practiceFormWrapper = $(".block-copyright");
@@ -147,28 +142,4 @@ public class AstrioPage {
         return this;
     }
 
-    public AstrioPage setVacanciesEmail(String formVacanciesEmail) {
-        vacanciesEmail.setValue(formVacanciesEmail);
-        return this;
-    }
-
-    public AstrioPage setVacanciesPhone(String formVacanciesPhone) {
-        vacanciesPhone.setValue(formVacanciesPhone);
-        return this;
-    }
-
-    public AstrioPage setVacanciesComment(String formVacanciesComment) {
-        vacanciesComment.setValue(formVacanciesComment);
-        return this;
-    }
-
-    public AstrioPage vacanciesButton() {
-        vacanciesSubmit.click();
-        return this;
-    }
-
-    public AstrioPage vacanciesCheckForm(String key) {
-        vacanciesMessage.shouldHave(text(key));
-        return this;
-    }
 }
