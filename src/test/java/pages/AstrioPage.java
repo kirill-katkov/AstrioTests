@@ -14,6 +14,8 @@ public class AstrioPage {
     menuLinkDoing=$x("(//li[@class='careerMenu__item']//a)[2]"),//what are we doing
     menuLinkEducation= $x("(//li[@class='careerMenu__item']//a)[3]"), //education
            menuLinkCareer = $x("(//li[@class='careerMenu__item']//a)[4]"), //career
+            menuLinkPractice= $x("(//li[@class='careerMenu__item']//a)[5]"), //practice
+            menuLinkVacancies = $x("(//li[@class='careerMenu__item']//a)[6]"), //vacancies
     menuAboutUCheckTitle =  $("div#about-us .careerInfo__title"),
             menuAboutUCheckText=$("div#about-us .careerInfo__text"),
 
@@ -28,6 +30,11 @@ public class AstrioPage {
     contactPhone=$("#short-contacts-phone"),
     contactSubmit=$(".shortContacts__submit"),
             contactMessage= $("#short-contacts-form .shortContacts__message"),
+            vacanciesMessage= $(".formContact__message"),
+    vacanciesEmail= $("#email"),
+            vacanciesPhone= $("#phone"),
+            vacanciesComment=$("#comment"),
+            vacanciesSubmit=$(".formContact__submit"),
             linkMenuMain = $(".block-top-menu"),//на главной странице
             linkMenuVacancies = $("ul.careerMenu__list"),//на странице вакансий
             practiceFormWrapper = $(".block-copyright");
@@ -134,6 +141,31 @@ public class AstrioPage {
 
     public AstrioPage careerCheckForm(String key) {
         contactMessage.shouldHave(text(key));
+        return this;
+    }
+
+    public AstrioPage setVacanciesEmail(String formVacanciesEmail) {
+        vacanciesEmail.setValue(formVacanciesEmail);
+        return this;
+    }
+
+    public AstrioPage setVacanciesPhone(String formVacanciesPhone) {
+        vacanciesPhone.setValue(formVacanciesPhone);
+        return this;
+    }
+
+    public AstrioPage setVacanciesComment(String formVacanciesComment) {
+        vacanciesComment.setValue(formVacanciesComment);
+        return this;
+    }
+
+    public AstrioPage vacanciesButton() {
+        vacanciesSubmit.click();
+        return this;
+    }
+
+    public AstrioPage vacanciesCheckForm(String key) {
+        vacanciesMessage.shouldHave(text(key));
         return this;
     }
 

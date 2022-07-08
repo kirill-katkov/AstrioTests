@@ -178,4 +178,41 @@ public class AstrioPageTests extends TestBase{
         });
     }
 
+
+    @Test
+    @Tag("astrio")
+    @DisplayName("Заполнение формы для Старта в IT проверка отправки")
+    void setAndCheckLinkVacancies() {
+        step("Открытие страницы - https://astrio.ru/", () -> {
+            astrioPage.openPage();
+        });
+        step("Открытие страницы Вакансий", () -> {
+            astrioPage.openNavLinkVacancies();
+        });
+        step("Переход к пункту меню -Наши вакансии", () -> {
+            astrioPage.openNavLinkVacancies();
+        });
+
+        step("Заполнение емайла в форме", () -> {
+            astrioPage.setVacanciesEmail("1ya-ruslan@gmail.com");
+        });
+        step("Заполнение телефона  в форме", () -> {
+            astrioPage.setVacanciesPhone("790429445322");
+        });
+        step("Заполнение телефона  в форме", () -> {
+            astrioPage.setVacanciesComment("jobs for me");
+        });
+
+        step("Клик по кнопке - отправка формы", () -> {
+            astrioPage.vacanciesButton();
+        });
+
+        step("Проверка заполнения формы", () -> {
+            Selenide.sleep(5000);
+            astrioPage.vacanciesCheckForm("Ваше сообщение получено и мы ответим на него в ближайшее время. Спасибо за сообщение.");
+        });
+    }
+
+
+
 }
