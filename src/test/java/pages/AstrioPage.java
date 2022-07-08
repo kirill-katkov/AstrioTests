@@ -14,7 +14,6 @@ public class AstrioPage {
     menuLinkDoing=$x("(//li[@class='careerMenu__item']//a)[2]"),//what are we doing
     menuLinkEducation= $x("(//li[@class='careerMenu__item']//a)[3]"), //education
            menuLinkCareer = $x("(//li[@class='careerMenu__item']//a)[4]"), //career
-            menuLinkPractice= $x("(//li[@class='careerMenu__item']//a)[5]"), //practice
             menuLinkVacancies = $x("(//li[@class='careerMenu__item']//a)[6]"), //vacancies
     menuAboutUCheckTitle =  $("div#about-us .careerInfo__title"),
             menuAboutUCheckText=$("div#about-us .careerInfo__text"),
@@ -112,6 +111,10 @@ public class AstrioPage {
         menuLinkEducation.click();
         return this;
     }
+    public AstrioPage openMenuLinkVacancies() {
+        menuLinkVacancies.click();
+        return this;
+    }
 
 
     public AstrioPage openMenuLinkCareer() {
@@ -168,8 +171,4 @@ public class AstrioPage {
         vacanciesMessage.shouldHave(text(key));
         return this;
     }
-
-
-
-
 }

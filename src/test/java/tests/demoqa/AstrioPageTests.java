@@ -208,7 +208,7 @@ public class AstrioPageTests extends TestBase{
             astrioPage.openNavLinkVacancies();
         });
         step("Переход к пункту меню -Наши вакансии", () -> {
-            astrioPage.openNavLinkVacancies();
+            astrioPage.openMenuLinkVacancies();
         });
 
         step("Заполнение емайла в форме", () -> {
