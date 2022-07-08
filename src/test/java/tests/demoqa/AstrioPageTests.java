@@ -30,8 +30,27 @@ public class AstrioPageTests extends TestBase{
         step("Проверка копирайта - astrio", () -> {
             astrioPage.checkCopyright();
         });
-
     }
+
+
+
+    @Test
+    @Tag("astrio")
+    @DisplayName("Открытие страницы вакансий и проверка копирайта")
+    void vacanciesCopyrightTest() {
+        step("Открытие страницы - https://astrio.ru/", () -> {
+            astrioPage.openPage();
+        });
+        step("Открытие страницы Вакансий", () -> {
+            astrioPage.openNavLinkVacancies();
+        });
+        step("Проверка копирайта - astrio", () -> {
+            astrioPage.checkCopyright();
+        });
+    }
+
+
+
 
     @Test
     @Tag("astrio")
@@ -70,32 +89,31 @@ public class AstrioPageTests extends TestBase{
                     .checkResultVacancies("Стажировка и практика")
                     .checkResultVacancies("Наши вакансии");
         });
-
     }
 
-//    @Test
-//    @Tag("astrio")
-//    @DisplayName("Переход к пунту меню - О нас и проверка контента")
-//    void aboutUSOpenAndCheck() {
-//        step("Открытие страницы - https://astrio.ru/", () -> {
-//            astrioPage.openPage();
-//        });
-//        step("Открытие страницы Вакансий", () -> {
-//            astrioPage.openNavLinkVacancies();
-//        });
-//
-//        step("Переход к пункту меню о Нас", () -> {
-//            astrioPage.openScrollNavAboutUS();
-//        });
-//
-//        step("Проверка текста заголовка", () -> {
-//            astrioPage.aboutUCheckTitle("Работа в одной из лучших IT компаний Ульяновска");
-//        });
-//
-//        step("Проверка текста параграфа", () -> {
-//            astrioPage.aboutUCheckText("Высокий уровень проектов,");
-//        });
-//    }
+    @Test
+    @Tag("astrio")
+    @DisplayName("Переход к пунту меню - О нас и проверка контента")
+    void aboutUSOpenAndCheck() {
+        step("Открытие страницы - https://astrio.ru/", () -> {
+            astrioPage.openPage();
+        });
+        step("Открытие страницы Вакансий", () -> {
+            astrioPage.openNavLinkVacancies();
+        });
+
+        step("Переход к пункту меню о Нас", () -> {
+            astrioPage.openScrollNavAboutUS();
+        });
+
+        step("Проверка текста заголовка", () -> {
+            astrioPage.aboutUCheckTitle("Работа в одной из лучших IT компаний Ульяновска");
+        });
+
+        step("Проверка текста параграфа", () -> {
+            astrioPage.aboutUCheckText("Высокий уровень проектов,");
+        });
+    }
 
     @Test
     @Tag("astrio")
@@ -181,7 +199,7 @@ public class AstrioPageTests extends TestBase{
 
     @Test
     @Tag("astrio")
-    @DisplayName("Заполнение формы для Старта в IT проверка отправки")
+    @DisplayName("Заполнение формы -  Пообщаемся?")
     void setAndCheckLinkVacancies() {
         step("Открытие страницы - https://astrio.ru/", () -> {
             astrioPage.openPage();
@@ -199,7 +217,7 @@ public class AstrioPageTests extends TestBase{
         step("Заполнение телефона  в форме", () -> {
             astrioPage.setVacanciesPhone("790429445322");
         });
-        step("Заполнение телефона  в форме", () -> {
+        step("Заполнение сообщения в форме", () -> {
             astrioPage.setVacanciesComment("jobs for me");
         });
 
