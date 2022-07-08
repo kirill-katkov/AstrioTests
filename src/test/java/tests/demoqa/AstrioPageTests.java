@@ -107,7 +107,7 @@ public class AstrioPageTests extends TestBase{
         });
 
         step("Проверка текста заголовка", () -> {
-            astrioPage.aboutUCheckTitle("Работа в одной из лучших IT компаний Ульяновска");
+            astrioPage.aboutUCheckTitle("Работа в одной из лучших IT-компаний Ульяновска");
         });
 
         step("Проверка текста параграфа", () -> {
