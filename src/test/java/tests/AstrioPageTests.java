@@ -24,7 +24,7 @@ public class AstrioPageTests extends TestBase {
     @Test
     @Tag("astrio")
     @DisplayName("Проверка открытия страницы и поиск копирайта на главной странице")
-    void checkCopyrightTest() {
+    void mainCopyrightTest() {
         step("Открытие страницы - https://astrio.ru/", () -> {
             astrioPage.openPage();
         });
@@ -41,7 +41,7 @@ public class AstrioPageTests extends TestBase {
         step("Открытие страницы - https://astrio.ru/", () -> {
             astrioPage.openPage();
         });
-        step("Открытие страницы Вакансий", () -> {
+        step("Открытие страницы Вакансий https://astrio.ru/career/", () -> {
             astrioPage.openNavLinkVacancies();
         });
         step("Проверка копирайта - astrio", () -> {
