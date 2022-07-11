@@ -26,6 +26,8 @@
 <img width="6%" title="JUnit5" src="images/logo/JUnit5.svg">
 <img width="6%" title="GitHub" src="images/logo/GitHub.svg">
 <img width="6%" title="Jenkins" src="images/logo/Jenkins.svg">
+<img width="6%" title="Jenkins" src="images/logo/AllureTestOps.png">
+<img width="6%" title="Jenkins" src="images/logo/Jira.png">
 <img width="6%" title="Telegram" src="images/logo/Telegram.svg">
 </p>
 
@@ -84,6 +86,30 @@ astrio
 <img title="Allure Test Page" src="images/screenshots/allure-2.png">
 </p>
 
+
+
+## :open_book: Allure TestOps
+- ### Дашборд
+<p align="center">
+<img title="Allure Overview Dashboard" src="images/screenshots/Allure-TestOps-1.png">
+</p>
+
+- ### Тест-кейсы
+<p align="center">
+<img title="Allure Test Cases" src="images/screenshots/Allure-TestOps-2.png">
+</p>
+
+- ### Страница запуска тестов
+<p align="center">
+<img title="Allure Test Cases Launches" src="images/screenshots/Allure-TestOps-3.png">
+</p>
+
+
+## Jira
+- ### Отчет по тест-кейсам и прогонов тестов
+<p align="center">
+<img title="Allure Overview Dashboard" src="images/screenshots/jira.png">
+</p>
 
 ## :robot: Отчет в Telegram
 <p align="center">

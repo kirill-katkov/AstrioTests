@@ -11,10 +11,10 @@ public class AstrioPage {
             navLinkVacancies = $x("(//nav//ul//li//a)[1]"),
     scrollNavAboutUS = $(".careerBanner__point--point1 .careerBanner__pointCircle"),
 
-    menuLinkDoing=$x("(//li[@class='careerMenu__item']//a)[2]"),//what are we doing
-    menuLinkEducation= $x("(//li[@class='careerMenu__item']//a)[3]"), //education
-           menuLinkCareer = $x("(//li[@class='careerMenu__item']//a)[4]"), //career
-            menuLinkVacancies = $x("(//li[@class='careerMenu__item']//a)[6]"), //vacancies
+    menuLinkDoing=$x("(//li[@class='careerMenu__item']//a)[2]"),
+    menuLinkEducation= $x("(//li[@class='careerMenu__item']//a)[3]"),
+           menuLinkCareer = $x("(//li[@class='careerMenu__item']//a)[4]"),
+            menuLinkVacancies = $x("(//li[@class='careerMenu__item']//a)[6]"),
     menuAboutUCheckTitle =  $("div#about-us .careerInfo__title"),
             menuAboutUCheckText=$("div#about-us .careerInfo__text"),
 
