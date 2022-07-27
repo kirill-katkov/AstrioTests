@@ -28,7 +28,6 @@ public class TestBase {
         capabilities.setCapability("enableVideo", true);
         Configuration.browserCapabilities = capabilities;
         Configuration.pageLoadTimeout = 40000;
-        Configuration.browserCapabilities.setCapability(CapabilityType.ACCEPT_SSL_CERTS, true);
     }
 
     @AfterEach

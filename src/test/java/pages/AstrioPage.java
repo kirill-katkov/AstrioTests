@@ -9,26 +9,26 @@ public class AstrioPage {
 
     SelenideElement
             navLinkVacancies = $x("(//nav//ul//li//a)[1]"),
-    scrollNavAboutUS = $(".careerBanner__point--point1 .careerBanner__pointCircle"),
+            scrollNavAboutUS = $(".careerBanner__point--point1 .careerBanner__pointCircle"),
 
-    menuLinkDoing=$x("(//li[@class='careerMenu__item']//a)[2]"),
-    menuLinkEducation= $x("(//li[@class='careerMenu__item']//a)[3]"),
-           menuLinkCareer = $x("(//li[@class='careerMenu__item']//a)[4]"),
+    menuLinkDoing = $x("(//li[@class='careerMenu__item']//a)[2]"),
+            menuLinkEducation = $x("(//li[@class='careerMenu__item']//a)[3]"),
+            menuLinkCareer = $x("(//li[@class='careerMenu__item']//a)[4]"),
             menuLinkVacancies = $x("(//li[@class='careerMenu__item']//a)[6]"),
-    menuAboutUCheckTitle =  $("div#about-us .careerInfo__title"),
-            menuAboutUCheckText=$("div#about-us .careerInfo__text"),
+            menuAboutUCheckTitle = $("div#about-us .careerInfo__title"),
+            menuAboutUCheckText = $("div#about-us .careerInfo__text"),
 
-    menuDoingCheckTitle =  $("div#what-we-do .careerInfo__title"),
-            menuDoingUCheckText=$("div#what-we-do .careerInfo__text"),
+    menuDoingCheckTitle = $("div#what-we-do .careerInfo__title"),
+            menuDoingUCheckText = $("div#what-we-do .careerInfo__text"),
 
-    menuEducationCheckTitle =  $("div#progress .careerInfo__title"),
-            menuEducationUCheckText=$("div#progress .careerInfo__text"),
+    menuEducationCheckTitle = $("div#progress .careerInfo__title"),
+            menuEducationUCheckText = $("div#progress .careerInfo__text"),
 
-    contactName= $("#short-contacts-name"),
-    contactEmail= $("#short-contacts-email"),
-    contactPhone=$("#short-contacts-phone"),
-    contactSubmit=$(".shortContacts__submit"),
-            contactMessage= $("#short-contacts-form .shortContacts__message"),
+    contactName = $("#short-contacts-name"),
+            contactEmail = $("#short-contacts-email"),
+            contactPhone = $("#short-contacts-phone"),
+            contactSubmit = $(".shortContacts__submit"),
+            contactMessage = $("#short-contacts-form .shortContacts__message"),
             linkMenuMain = $(".block-top-menu"),//на главной странице
             linkMenuVacancies = $("ul.careerMenu__list"),//на странице вакансий
             practiceFormWrapper = $(".block-copyright");
@@ -102,10 +102,12 @@ public class AstrioPage {
         menuLinkDoing.click();
         return this;
     }
+
     public AstrioPage openMenuLinkEducation() {
         menuLinkEducation.click();
         return this;
     }
+
     public AstrioPage openMenuLinkVacancies() {
         menuLinkVacancies.click();
         return this;

@@ -22,7 +22,7 @@ public class AstrioPageTests extends TestBase {
     AstrioPage astrioPage = new AstrioPage();
 
     @Test
-    @Tag("astrio")
+    //@Tag("astrio")
     @DisplayName("Проверка открытия страницы и поиск копирайта на главной странице")
     void mainCopyrightTest() {
         step("Открытие страницы - https://astrio.ru/", () -> {
@@ -35,7 +35,7 @@ public class AstrioPageTests extends TestBase {
 
 
     @Test
-    @Tag("astrio")
+    //@Tag("astrio")
     @DisplayName("Открытие страницы вакансий и проверка копирайта")
     void vacanciesCopyrightTest() {
         step("Открытие страницы - https://astrio.ru/", () -> {
@@ -51,7 +51,7 @@ public class AstrioPageTests extends TestBase {
 
 
     @Test
-    @Tag("astrio")
+    //@Tag("astrio")
     @DisplayName("Проверка меню на главной страницы")
     void checkMainMenu() {
         step("Открытие страницы - https://astrio.ru/", () -> {
@@ -69,7 +69,7 @@ public class AstrioPageTests extends TestBase {
     }
 
     @Test
-    @Tag("astrio")
+    //@Tag("astrio")
     @DisplayName("Открытие страницы вакансий и проверка меню")
     void vacanciesOpenAndCheck() {
         step("Открытие страницы - https://astrio.ru/", () -> {
@@ -90,7 +90,7 @@ public class AstrioPageTests extends TestBase {
     }
 
     @Test
-    @Tag("astrio")
+    //@Tag("astrio")
     @DisplayName("Переход к пунту меню - О нас и проверка контента")
     void aboutUSOpenAndCheck() {
         step("Открытие страницы - https://astrio.ru/", () -> {
@@ -114,7 +114,7 @@ public class AstrioPageTests extends TestBase {
     }
 
     @Test
-    @Tag("astrio")
+    //@Tag("astrio")
     @DisplayName("Переход к пунту меню - Что мы делаем и проверка контакета")
     void linkDoingOpenAndCheck() {
         step("Открытие страницы - https://astrio.ru/", () -> {
@@ -138,7 +138,7 @@ public class AstrioPageTests extends TestBase {
 
 
     @Test
-    @Tag("astrio")
+    //@Tag("astrio")
     @DisplayName("Переход к пунту меню - Обучение и карьера и проверка контекста")
     void linkEducationOpenAndCheck() {
         step("Открытие страницы - https://astrio.ru/", () -> {
@@ -161,7 +161,7 @@ public class AstrioPageTests extends TestBase {
     }
 
     @Test
-    @Tag("astrio")
+    //@Tag("astrio")
     @DisplayName("Заполнение формы для Старта в IT проверка отправки")
     void setAndCheckLinkCareer() {
         step("Открытие страницы - https://astrio.ru/", () -> {
