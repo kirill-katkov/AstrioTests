@@ -19,7 +19,6 @@ public class VacanciesPage {
 
     public VacanciesPage openNavLinkVacancies() {
         navLinkVacancies.click();
-        //zoom(0.5);
         return this;
     }
 

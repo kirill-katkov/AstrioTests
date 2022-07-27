@@ -20,7 +20,6 @@ public class DoingPage {
 
     public DoingPage openNavLinkVacancies() {
         navLinkVacancies.click();
-       // zoom(0.5);
         return this;
     }
 
