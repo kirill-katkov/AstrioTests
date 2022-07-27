@@ -14,13 +14,11 @@ public class EducationPage {
 
     public EducationPage openHomePage() {
         open("https://astrio.ru/");
-        //zoom(0.5);
         return this;
     }
 
     public EducationPage openNavLinkVacancies() {
         navLinkVacancies.click();
-        //zoom(0.5);
         return this;
     }
 

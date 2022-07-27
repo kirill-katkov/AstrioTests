@@ -14,7 +14,6 @@ public class VacanciesPage {
 
     public VacanciesPage openHomePage() {
         open("https://astrio.ru/");
-        //zoom(0.5);
         return this;
     }
 

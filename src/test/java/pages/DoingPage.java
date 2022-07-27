@@ -15,7 +15,6 @@ public class DoingPage {
 
     public DoingPage openHomePage() {
         open("https://astrio.ru/");
-       // zoom(0.5);
         return this;
     }
 

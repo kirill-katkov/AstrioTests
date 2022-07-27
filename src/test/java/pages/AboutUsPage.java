@@ -15,19 +15,16 @@ public class AboutUsPage {
 
     public AboutUsPage openHomePage() {
         open("https://astrio.ru/");
-        //zoom(0.5);
         return this;
     }
 
     public AboutUsPage openNavLinkVacancies() {
         navLinkVacancies.click();
-        //zoom(0.5);
         return this;
     }
 
     public AboutUsPage openScrollNavAboutUS() {
         scrollNavAboutUS.click();
-        //zoom(0.5);
         return this;
     }
 
