@@ -8,7 +8,7 @@ import static com.codeborne.selenide.Selenide.*;
 public class AboutUsPage {
 
     SelenideElement
-            navLinkVacancies = $x("(//nav//ul//li//a)[1]"),
+            navLinkVacancies = $x("(//nav//a)[1]"),
             scrollNavAboutUS = $(".careerBanner__point--point1 .careerBanner__pointCircle"),
             menuAboutUCheckTitle = $("div#about-us .careerInfo__title"),
             menuAboutUCheckText = $("div#about-us .careerInfo__text");
