@@ -6,6 +6,7 @@ import static com.codeborne.selenide.Condition.text;
 import static com.codeborne.selenide.Selenide.*;
 
 public class EducationPage {
+
     SelenideElement
             navLinkVacancies = $x("(//nav//a)[1]"),
             menuLinkEducation = $x("(//li[@class='careerMenu__item']//a)[3]"),
