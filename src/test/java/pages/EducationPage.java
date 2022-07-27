@@ -7,7 +7,7 @@ import static com.codeborne.selenide.Selenide.*;
 
 public class EducationPage {
     SelenideElement
-            navLinkVacancies = $x("(//nav//ul//li//a)[1]"),
+            navLinkVacancies = $x("(//nav//a)[1]"),
             menuLinkEducation = $x("(//li[@class='careerMenu__item']//a)[3]"),
             menuEducationCheckTitle = $("div#progress .careerInfo__title"),
             menuEducationUCheckText = $("div#progress .careerInfo__text");

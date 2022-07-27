@@ -8,7 +8,7 @@ import static com.codeborne.selenide.Selenide.*;
 public class CareerPage {
 
     SelenideElement
-            navLinkVacancies = $x("(//nav//ul//li//a)[1]"),
+            navLinkVacancies = $x("(//nav//a)[1]"),
             menuLinkCareer = $x("(//li[@class='careerMenu__item']//a)[4]"),
             contactName = $("#short-contacts-name"),
             contactEmail = $("#short-contacts-email"),

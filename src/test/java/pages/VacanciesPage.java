@@ -8,7 +8,7 @@ import static com.codeborne.selenide.Selenide.*;
 public class VacanciesPage {
 
     SelenideElement
-            navLinkVacancies = $x("(//nav//ul//li//a)[1]"),
+            navLinkVacancies = $x("(//nav//a)[1]"),
             practiceFormWrapper = $(".block-copyright"),
             linkMenuVacancies = $("ul.careerMenu__list");
 

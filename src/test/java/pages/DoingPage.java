@@ -8,7 +8,7 @@ import static com.codeborne.selenide.Selenide.*;
 public class DoingPage {
 
     SelenideElement
-            navLinkVacancies = $x("(//nav//ul//li//a)[1]"),
+            navLinkVacancies = $x("(//nav//a)[1]"),
             menuLinkDoing = $x("(//li[@class='careerMenu__item']//a)[2]"),
             menuDoingCheckTitle = $("div#what-we-do .careerInfo__title"),
             menuDoingUCheckText = $("div#what-we-do .careerInfo__text");
