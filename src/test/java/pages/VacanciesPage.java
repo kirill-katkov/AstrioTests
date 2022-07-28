@@ -3,7 +3,8 @@ package pages;
 import com.codeborne.selenide.SelenideElement;
 
 import static com.codeborne.selenide.Condition.text;
-import static com.codeborne.selenide.Selenide.*;
+import static com.codeborne.selenide.Selenide.$;
+import static com.codeborne.selenide.Selenide.$x;
 
 public class VacanciesPage {
 
@@ -11,11 +12,6 @@ public class VacanciesPage {
             navLinkVacancies = $x("(//nav//a)[1]"),
             practiceFormWrapper = $(".block-copyright"),
             linkMenuVacancies = $("ul.careerMenu__list");
-
-    public VacanciesPage openHomePage() {
-        open("https://astrio.ru/");
-        return this;
-    }
 
     public VacanciesPage openNavLinkVacancies() {
         navLinkVacancies.click();

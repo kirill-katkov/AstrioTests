@@ -3,7 +3,8 @@ package pages;
 import com.codeborne.selenide.SelenideElement;
 
 import static com.codeborne.selenide.Condition.text;
-import static com.codeborne.selenide.Selenide.*;
+import static com.codeborne.selenide.Selenide.$;
+import static com.codeborne.selenide.Selenide.$x;
 
 public class AboutUsPage {
 
@@ -12,11 +13,6 @@ public class AboutUsPage {
             scrollNavAboutUS = $(".careerBanner__point--point1 .careerBanner__pointCircle"),
             menuAboutUCheckTitle = $("div#about-us .careerInfo__title"),
             menuAboutUCheckText = $("div#about-us .careerInfo__text");
-
-    public AboutUsPage openHomePage() {
-        open("https://astrio.ru/");
-        return this;
-    }
 
     public AboutUsPage openNavLinkVacancies() {
         navLinkVacancies.click();

@@ -8,9 +8,7 @@ import io.qameta.allure.selenide.AllureSelenide;
 import org.aeonbits.owner.ConfigFactory;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeAll;
-import org.openqa.selenium.remote.CapabilityType;
 import org.openqa.selenium.remote.DesiredCapabilities;
-import pages.MainPage;
 
 import static com.codeborne.selenide.Selenide.closeWebDriver;
 
@@ -20,7 +18,6 @@ public class TestBase {
     @BeforeAll
     static void setUp() {
         SelenideLogger.addListener("AllureSelenide", new AllureSelenide());
-       // Configuration.baseUrl = System.getProperty("base_url");
         Configuration.baseUrl = "https://astrio.ru/";
         Configuration.browser = System.getProperty("browser", "chrome");
         Configuration.browserSize = System.getProperty("browsersize");
@@ -40,6 +37,4 @@ public class TestBase {
         Attach.addVideo();
         closeWebDriver();
     }
-
-
 }

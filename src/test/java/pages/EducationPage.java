@@ -3,7 +3,8 @@ package pages;
 import com.codeborne.selenide.SelenideElement;
 
 import static com.codeborne.selenide.Condition.text;
-import static com.codeborne.selenide.Selenide.*;
+import static com.codeborne.selenide.Selenide.$;
+import static com.codeborne.selenide.Selenide.$x;
 
 public class EducationPage {
 
@@ -12,11 +13,6 @@ public class EducationPage {
             menuLinkEducation = $x("(//li[@class='careerMenu__item']//a)[3]"),
             menuEducationCheckTitle = $("div#progress .careerInfo__title"),
             menuEducationUCheckText = $("div#progress .careerInfo__text");
-
-    public EducationPage openHomePage() {
-        open("https://astrio.ru/");
-        return this;
-    }
 
     public EducationPage openNavLinkVacancies() {
         navLinkVacancies.click();

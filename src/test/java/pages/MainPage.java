@@ -3,18 +3,13 @@ package pages;
 import com.codeborne.selenide.SelenideElement;
 
 import static com.codeborne.selenide.Condition.text;
-import static com.codeborne.selenide.Selenide.*;
+import static com.codeborne.selenide.Selenide.$;
 
 public class MainPage {
 
     SelenideElement
             practiceFormWrapper = $(".block-copyright"),
             linkMenuMain = $(".block-top-menu");
-
-    public MainPage openHomePage() {
-        open("https://astrio.ru/");
-        return this;
-    }
 
     public MainPage checkCopyright() {
         practiceFormWrapper.shouldHave(text("ASTRIO"));

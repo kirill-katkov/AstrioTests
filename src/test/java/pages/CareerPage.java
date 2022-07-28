@@ -16,11 +16,6 @@ public class CareerPage {
             contactSubmit = $(".shortContacts__submit"),
             contactMessage = $("#short-contacts-form .shortContacts__message");
 
-    public CareerPage openHomePage() {
-        open("https://astrio.ru/");
-        return this;
-    }
-
     public CareerPage openNavLinkVacancies() {
         navLinkVacancies.click();
         zoom(0.5);
