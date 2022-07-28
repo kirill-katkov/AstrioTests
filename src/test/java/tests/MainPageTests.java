@@ -9,6 +9,7 @@ import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 import pages.MainPage;
 
+import static com.codeborne.selenide.Selenide.open;
 import static io.qameta.allure.Allure.step;
 
 @Owner("KirillKatkov")
@@ -23,7 +24,7 @@ public class MainPageTests extends TestBase {
     @DisplayName("Проверка открытия страницы и поиск копирайта на главной странице")
     void mainCopyrightTest() {
         step("Открытие страницы - https://astrio.ru/", () -> {
-            mainPage.openHomePage();
+            open("");
         });
         step("Проверка копирайта - astrio", () -> {
             mainPage.checkCopyright();
@@ -35,9 +36,8 @@ public class MainPageTests extends TestBase {
     @DisplayName("Проверка меню на главной страницы")
     void checkMainMenu() {
         step("Открытие страницы - https://astrio.ru/", () -> {
-            mainPage.openHomePage();
+            open("");
         });
-
         step("Проверка присутствия на странице пунктов меню - Вакансия, О нас, Клиенты, Услуги, Блог, Контакты", () -> {
             mainPage.checkResultMain("Вакансии")
                     .checkResultMain("О нас")
