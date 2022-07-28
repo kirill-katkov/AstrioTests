@@ -21,7 +21,8 @@ public class TestBase {
     @BeforeAll
     static void setUp() {
         SelenideLogger.addListener("AllureSelenide", new AllureSelenide());
-        Configuration.baseUrl = System.getProperty("base_url");
+       // Configuration.baseUrl = System.getProperty("base_url");
+        Configuration.baseUrl = "https://astrio.ru/";
         Configuration.browser = System.getProperty("browser", "chrome");
         Configuration.browserSize = System.getProperty("browsersize");
         Configuration.remote = "https://" + configs.selenoidLogin() + ":" + configs.selenoidPass() + "@" + System.getProperty("selenoid_server");
