@@ -17,7 +17,7 @@ import static io.qameta.allure.Allure.step;
 @Story("Просмотр созданных задач в репозитории")
 @Link(value = "Тестинг", url = "https://github.com")
 public class MainPageTests extends TestBase {
-    //MainPage mainPage = new MainPage();
+    MainPage mainPage = new MainPage();
 
     @Test
     @Tag("astrio")

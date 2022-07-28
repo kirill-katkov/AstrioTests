@@ -10,6 +10,7 @@ import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 import pages.CareerPage;
 
+import static com.codeborne.selenide.Selenide.open;
 import static io.qameta.allure.Allure.step;
 
 @Owner("KirillKatkov")
@@ -25,7 +26,7 @@ public class CareerPageTests extends TestBase{
     @DisplayName("Заполнение формы для Старта в IT проверка отправки")
     void setAndCheckLinkCareer() {
         step("Открытие страницы - https://astrio.ru/", () -> {
-            careerPage.openHomePage();
+            open("");
         });
         step("Открытие страницы Вакансий", () -> {
             careerPage.openNavLinkVacancies();

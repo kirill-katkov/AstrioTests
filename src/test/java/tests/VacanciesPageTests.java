@@ -9,6 +9,7 @@ import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 import pages.VacanciesPage;
 
+import static com.codeborne.selenide.Selenide.open;
 import static io.qameta.allure.Allure.step;
 
 @Owner("KirillKatkov")
@@ -23,7 +24,7 @@ public class VacanciesPageTests extends TestBase {
     @DisplayName("Открытие страницы вакансий и проверка копирайта")
     void vacanciesCopyrightTest() {
         step("Открытие страницы - https://astrio.ru/", () -> {
-            vacanciesPage.openHomePage();
+            open("");
         });
         step("Открытие страницы Вакансий https://astrio.ru/career/", () -> {
             vacanciesPage.openNavLinkVacancies();
@@ -39,7 +40,7 @@ public class VacanciesPageTests extends TestBase {
     @DisplayName("Открытие страницы вакансий и проверка меню")
     void vacanciesOpenAndCheck() {
         step("Открытие страницы - https://astrio.ru/", () -> {
-            vacanciesPage.openHomePage();
+            open("");
         });
         step("Открытие страницы Вакансий", () -> {
             vacanciesPage.openNavLinkVacancies();

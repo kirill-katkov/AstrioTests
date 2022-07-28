@@ -9,6 +9,7 @@ import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 import pages.DoingPage;
 
+import static com.codeborne.selenide.Selenide.open;
 import static io.qameta.allure.Allure.step;
 
 @Owner("KirillKatkov")
@@ -23,7 +24,7 @@ public class DoingPageTests extends TestBase {
     @DisplayName("Переход к пунту меню - Что мы делаем и проверка контакета")
     void linkDoingOpenAndCheck() {
         step("Открытие страницы - https://astrio.ru/", () -> {
-            aboutUsPage.openHomePage();
+            open("");
         });
         step("Открытие страницы Вакансий", () -> {
             aboutUsPage.openNavLinkVacancies();

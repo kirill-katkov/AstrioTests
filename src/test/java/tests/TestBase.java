@@ -16,7 +16,6 @@ import static com.codeborne.selenide.Selenide.closeWebDriver;
 
 public class TestBase {
     private static final CredentialsConfig configs = ConfigFactory.create(CredentialsConfig.class);
-    MainPage mainPage = new MainPage();
 
     @BeforeAll
     static void setUp() {

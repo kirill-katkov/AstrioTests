@@ -9,6 +9,7 @@ import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 import pages.AboutUsPage;
 
+import static com.codeborne.selenide.Selenide.open;
 import static io.qameta.allure.Allure.step;
 
 @Owner("KirillKatkov")
@@ -24,7 +25,7 @@ public class AboutUsPageTests extends TestBase {
     @DisplayName("Переход к пунту меню - О нас и проверка контента")
     void aboutUSOpenAndCheck() {
         step("Открытие страницы - https://astrio.ru/", () -> {
-            aboutUsPage.openHomePage();
+            open("");
         });
         step("Открытие страницы Вакансий", () -> {
             aboutUsPage.openNavLinkVacancies();
