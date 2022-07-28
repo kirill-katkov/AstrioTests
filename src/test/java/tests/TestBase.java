@@ -10,11 +10,13 @@ import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeAll;
 import org.openqa.selenium.remote.CapabilityType;
 import org.openqa.selenium.remote.DesiredCapabilities;
+import pages.MainPage;
 
 import static com.codeborne.selenide.Selenide.closeWebDriver;
 
 public class TestBase {
     private static final CredentialsConfig configs = ConfigFactory.create(CredentialsConfig.class);
+    MainPage mainPage = new MainPage();
 
     @BeforeAll
     static void setUp() {
